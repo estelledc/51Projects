@@ -35,7 +35,7 @@ void DisplayDigit(unsigned char position, unsigned char number)
     P2_3 = (position >> 1) & 0x01;
     P2_4 = (position >> 2) & 0x01;
 
-    
+    delay_ms(1); // 延时以稳定显示
 }
 
 void main()
@@ -43,21 +43,21 @@ void main()
     while (1)
     {
         DisplayDigit(0, 1);
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         //展示八个数码管
         DisplayDigit(1, 2); // 在第2个数码管显示数字2
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(2, 3); // 在第3个数码管显示数字3
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(3, 4); // 在第4个数码管显示数字4
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(4, 5); // 在第5个数码管显示数字5
-        // delay_ms(1000); //延时1秒
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(5, 6); // 在第6个数码管显示数字6
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(6, 7); // 在第7个数码管显示数字7
-        // delay_ms(1000); //延时1秒
+        delay_ms(1000); //延时1秒
         DisplayDigit(7, 8); // 在第8个数码管显示数字8
     }
 }
