@@ -5,7 +5,7 @@
  * 
  * *********************************************
 */
-#include "LCD1602.h"//包含头文件
+#include "./LCD1602/LCD1602.h" //包含头文件
 
 #include <REGX52.H>
 #include <intrins.h>// 使用_nop_()函数
