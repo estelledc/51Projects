@@ -5,9 +5,9 @@
  * 
  * *********************************************
  */
-#include "LCD1602.h" // 包含LCD1602头文件
-#include "delay.h" // 包含延时函数头文件
-#include "display.h" // 包含显示数字函数头文件
+#include "../inc/LCD1602.h" // 包含LCD1602头文件
+#include "../inc/delay.h" // 包含延时函数头文件
+#include "../inc/display.h" // 包含显示数字函数头文件
 
 #include <REGX52.H>
 /**
