@@ -5,6 +5,7 @@
  * 
  * *********************************************
 */
+#include "LCD1602.h"//包含头文件
 
 #include <REGX52.H>
 #include <intrins.h>// 使用_nop_()函数
@@ -42,6 +43,9 @@ void main()
 {
     while (1)
     {
+        LCD_Init(); // 初始化LCD
+        LCD_ShowString(0, 0, "Hello, World!"); // 在第0行第0列显示字符串"Hello, World!"
+        
         DisplayDigit(0, 1);
         delay_ms(1000); //延时1秒
         //展示八个数码管
