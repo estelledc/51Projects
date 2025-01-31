@@ -1,5 +1,5 @@
 {
-  "name": "03-password",
+  "name": "03-password_judge_template",
   "type": "C51",
   "dependenceList": [],
   "srcDirs": [
@@ -12,7 +12,7 @@
     "folders": []
   },
   "miscInfo": {
-    "uid": "1a84b4793ab6e703bef1dcea0a8e27b2"
+    "uid": "e5332b69f21678b30e2ecfd8157ef88d"
   },
   "targets": {
     "Release": {
@@ -21,13 +21,20 @@
       "compileConfig": {
         "options": ""
       },
-      "uploader": "Custom",
+      "uploader": "stcgal",
       "uploadConfig": {
         "bin": "",
-        "commandLine": "python ./tools/stcflash.py -p ${port} \"${hexFile}\"",
-        "eraseChipCommand": ""
+        "eepromImgPath": "null",
+        "extraOptions": "",
+        "options": ".eide/stc.flash.json"
       },
-      "uploadConfigMap": {},
+      "uploadConfigMap": {
+        "Custom": {
+          "bin": "",
+          "commandLine": "python ./tools/stcflash.py -p ${port} \"${hexFile}\"",
+          "eraseChipCommand": ""
+        }
+      },
       "custom_dep": {
         "name": "default",
         "incList": [],
